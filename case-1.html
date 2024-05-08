@@ -28,14 +28,14 @@
             justify-content: space-between;
             gap: 150px;
             position: absolute;
-            top: 0;
+            top: 90px;
             left: 0;
             bottom: 0;
             margin: auto;
         }
         .gif{
             width: 200px;
-            height: 200px;
+            height: 150px;
             background: url("assets/man.gif") no-repeat center;
             background-size: cover;
         }
@@ -52,7 +52,6 @@
             font-size: 40px;
             font-weight: bolder;
             color: black;
-
         }
 
         .letters {
@@ -66,11 +65,11 @@
 
         .line {
             height: 2px;
-            width: 100%;
+            width: 90%;
             border: 0;
             position: absolute;
             top: 180px;
-            right: 0px;
+            right: 280px;
             bottom: 0;
             margin: auto;
         }
@@ -98,7 +97,19 @@
             color: white;
             border-radius: 20px;
         }
+        #building{
+            width: 20%;
+            height: 250px;
+            background: url("assets/building.gif");
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            right: 5px;
+            bottom: 50px;
+            margin: auto;
+        }
     </style>
+
 </head>
 <body>
 
@@ -117,6 +128,7 @@
     <hr>
 </div>
 <div id="house"></div>
+<div id="building"></div>
 
 <section id="letters-section">
     <div class="letters" id="a">A</div>
@@ -131,6 +143,7 @@
     <button id="start" class="btn">Start</button>
     <button id="stop" class="btn">Stop</button>
 </section>
+
 
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
 <script>
@@ -156,7 +169,6 @@
     $('#stop').on('click',() =>{
       clearInterval(interval);
     })
-
 </script>
 
 </body>
