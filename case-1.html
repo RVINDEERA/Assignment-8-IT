@@ -113,63 +113,63 @@
 </head>
 <body>
 
-<h1>JS QUE</h1>
+    <h1>JS QUE</h1>
 
-<section id="gifSection">
-    <div class="gif"></div>
-    <div class="gif"></div>
-    <div class="gif"></div>
-    <div class="gif"></div>
-    <div class="gif"></div>
-    <div class="gif"></div>
-</section>
+    <section id="gifSection">
+        <div class="gif"></div>
+        <div class="gif"></div>
+        <div class="gif"></div>
+        <div class="gif"></div>
+        <div class="gif"></div>
+        <div class="gif"></div>
+    </section>
 
-<div class="line">
-    <hr>
-</div>
-<div id="house"></div>
-<div id="building"></div>
+    <div class="line">
+        <hr>
+    </div>
+    <div id="house"></div>
+    <div id="building"></div>
 
-<section id="letters-section">
-    <div class="letters" id="a">A</div>
-    <div class="letters" id="b">B</div>
-    <div class="letters" id="c">C</div>
-    <div class="letters" id="d">D</div>
-    <div class="letters" id="e">E</div>
-    <div class="letters" id="f">F</div>
-</section>
+    <section id="letters-section">
+        <div class="letters" id="a">A</div>
+        <div class="letters" id="b">B</div>
+        <div class="letters" id="c">C</div>
+        <div class="letters" id="d">D</div>
+        <div class="letters" id="e">E</div>
+        <div class="letters" id="f">F</div>
+    </section>
 
-<section id="buttons">
-    <button id="start" class="btn">Start</button>
-    <button id="stop" class="btn">Stop</button>
-</section>
+    <section id="buttons">
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Stop</button>
+    </section>
 
 
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
-<script>
-    var array =["A","B","C","D","E","F"];
-    var interval;
+    <script>
+        var array =["A","B","C","D","E","F"];
+        var interval;
 
-    function replaceText(){
-        let lastValue = array.pop();
-        array.unshift(lastValue);
+        function replaceText(){
+            let lastValue = array.pop();
+            array.unshift(lastValue);
 
-        $('#a').text(array[0]);
-        $('#b').text(array[1]);
-        $('#c').text(array[2]);
-        $('#d').text(array[3]);
-        $('#e').text(array[4]);
-        $('#f').text(array[5]);
+            $('#a').text(array[0]);
+            $('#b').text(array[1]);
+            $('#c').text(array[2]);
+            $('#d').text(array[3]);
+            $('#e').text(array[4]);
+            $('#f').text(array[5]);
 
-    }
-    $('#start').on('click',() =>{
-        interval= setInterval(replaceText,1000);
-    });
+        }
+        $('#start').on('click',() =>{
+            interval= setInterval(replaceText,1000);
+        });
 
-    $('#stop').on('click',() =>{
-      clearInterval(interval);
-    })
-</script>
+        $('#stop').on('click',() =>{
+          clearInterval(interval);
+        })
+    </script>
 
 </body>
 </html>
