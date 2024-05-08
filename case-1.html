@@ -151,6 +151,10 @@
     }
     $('#start').on('click',() =>{
         interval= setInterval(replaceText,1000);
+    });
+
+    $('#stop').on('click',() =>{
+      clearInterval(interval);
     })
 
 </script>
