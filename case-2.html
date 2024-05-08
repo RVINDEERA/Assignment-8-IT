@@ -118,9 +118,21 @@
 
     <script src="assets/lib/jquery-3.7.1.min.js"></script>
     <script>
+        var boxes =["red","green","blue","yellow","lightpink","deeppink"];
+        var interval;
 
-        
+        function replaceColor(){
+            let lastColor = boxes.pop();
+            boxes.unshift(lastColor);
 
+            $('#a').css('background-color',boxes[0])
+            $('#b').css('background-color',boxes[1])
+            $('#c').css('background-color',boxes[2])
+            $('#d').css('background-color',boxes[3])
+            $('#e').css('background-color',boxes[4])
+            $('#f').css('background-color',boxes[5])
+        }
+        interval = setInterval(replaceColor,1000);
     </script>
 
 
