@@ -6,13 +6,27 @@
 
     <style>
         body{
-            background-color: #cbf5fc;
+            background-color: white;
+        }
+        h1 {
+            width: fit-content;
+            height: fit-content;
+            color: dodgerblue;
+            font-size: 75px;
+            font-weight: bold;
+            font-family: sans-serif;
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            margin: auto;
         }
         #gifSection{
             width: 80%;
             height: 172px;
             display: flex;
             justify-content: space-between;
+            gap: 150px;
             position: absolute;
             top: 0;
             left: 0;
@@ -24,6 +38,16 @@
             height: 200px;
             background: url("assets/man.gif") no-repeat center;
             background-size: cover;
+        }
+        .line {
+            height: 2px;
+            width: 100%;
+            border: 0;
+            position: absolute;
+            top: 180px;
+            right: 0px;
+            bottom: 0;
+            margin: auto;
         }
     </style>
 </head>
@@ -40,7 +64,10 @@
     <div class="gif"></div>
 </section>
 
-
+<div class="line">
+    <hr>
+</div>
+<div id="house"></div>
 
 </body>
 </html>
