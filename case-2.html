@@ -132,7 +132,16 @@
             $('#e').css('background-color',boxes[4])
             $('#f').css('background-color',boxes[5])
         }
-        interval = setInterval(replaceColor,1000);
+        
+
+        $('#start').on('click',() =>{
+            interval=setInterval(replaceColor, 1000);
+        });
+
+        $('#stop').on('click',() =>{
+            clearInterval(interval);
+        });
+
     </script>
 
 
