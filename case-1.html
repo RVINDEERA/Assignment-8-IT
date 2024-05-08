@@ -134,8 +134,22 @@
 
 <script src="assets/lib/jquery-3.7.1.min.js"></script>
 <script>
+    var array =["A","B","C","D","E","F"];
+    var interval;
 
+    function replaceText(){
+        let lastValue = array.pop();
+        array.unshift(lastValue);
 
+        $('#a').text(array[0]);
+        $('#b').text(array[1]);
+        $('#c').text(array[2]);
+        $('#d').text(array[3]);
+        $('#e').text(array[4]);
+        $('#f').text(array[5]);
+
+    }
+    interval= setInterval(replaceText,2000);
 </script>
 
 </body>
